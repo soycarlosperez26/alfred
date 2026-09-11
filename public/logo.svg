@@ -1,0 +1,30 @@
+<svg width="400" height="160" viewBox="0 0 400 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue circle with PC icon -->
+  <circle cx="80" cy="80" r="60" fill="#0077B6"/>
+  
+  <!-- Desktop monitor -->
+  <rect x="50" y="52" width="40" height="30" rx="2" fill="white"/>
+  <rect x="65" y="84" width="10" height="4" fill="white"/>
+  <circle cx="70" cy="90" r="3" fill="white"/>
+  
+  <!-- Desktop tower -->
+  <rect x="95" y="52" width="15" height="38" rx="2" fill="white"/>
+  <rect x="98" y="80" width="3" height="3" rx="1" fill="#0077B6"/>
+  <circle cx="99.5" cy="86" r="1.5" fill="#0077B6"/>
+  
+  <!-- Cursor on screen -->
+  <path d="M60 60L60 70L65 67L60 60Z" fill="#0077B6"/>
+  
+  <!-- Alfred text -->
+  <!-- A (orange) -->
+  <path d="M145 115L165 55H185L205 115H190L187 105H163L160 115H145ZM167 93H183L175 70L167 93Z" fill="#F77F00"/>
+  
+  <!-- lfred (blue) -->
+  <path d="M210 115V55H225V115H210Z" fill="#0077B6"/>
+  <path d="M235 115V75H247V78C250 76 254 75 258 75C261 75 264 76 266 77V90C263 88 260 87 257 87C254 87 251 88 249 89V115H235Z" fill="#0077B6"/>
+  <path d="M275 115V75H290V78C293 76 297 75 301 75C308 75 313 78 315 83C318 78 323 75 330 75C340 75 346 81 346 91V115H331V93C331 90 329 88 326 88C323 88 321 90 321 93V115H306V93C306 90 304 88 301 88C298 88 296 90 296 93V115H275Z" fill="#0077B6"/>
+  <path d="M355 95C355 83 363 75 375 75C387 75 395 83 395 95C395 107 387 115 375 115C363 115 355 107 355 95ZM381 95C381 89 379 86 375 86C371 86 369 89 369 95C369 101 371 104 375 104C379 104 381 101 381 95Z" fill="#0077B6"/>
+  
+  <!-- Orange underline under A -->
+  <rect x="145" y="120" width="60" height="4" rx="2" fill="#F77F00"/>
+</svg>
