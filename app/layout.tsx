@@ -11,6 +11,17 @@ export const metadata: Metadata = {
   title: "Soporte técnico Barranquilla y Cartagena | Alfred",
   description: "Técnico de PC, redes, celulares y software en Barranquilla y Cartagena. Asesoría gratis 15 min por WhatsApp. Sin enredos.",
   keywords: "soporte técnico Barranquilla, técnico computadores Cartagena, reparación PC, redes wifi, soporte celulares, técnico informático costa",
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+      { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon.png', sizes: '48x48', type: 'image/png' },
+      { url: '/icon.png', sizes: '192x192', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
   openGraph: {
     title: "Soporte técnico Barranquilla y Cartagena | Alfred",
     description: "Técnico de PC, redes, celulares y software en Barranquilla y Cartagena. Asesoría gratis 15 min por WhatsApp. Sin enredos.",
