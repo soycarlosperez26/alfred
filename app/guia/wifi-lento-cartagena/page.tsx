@@ -202,9 +202,6 @@ export default function WifiLentoCartagena() {
             <div className="mt-16 bg-blue-50 rounded-xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Sigue leyendo</h3>
               <div className="space-y-4">
-                <Link href="/guia/mantenimiento-preventivo-computador-cartagena" className="block text-[#0077B6] hover:text-[#023E8A] font-medium">
-                  → Mantenimiento preventivo de PC en Cartagena
-                </Link>
                 <Link href="/guia/pc-lento-barranquilla" className="block text-[#0077B6] hover:text-[#023E8A] font-medium">
                   → PC lento en Barranquilla: qué hacer antes de formatear
                 </Link>

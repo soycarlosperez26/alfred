@@ -230,21 +230,6 @@ export default function Home() {
                 <p className="text-gray-700 text-sm mb-4">Cómo trabajo en Barranquilla y Cartagena</p>
                 <span className="text-[#0077B6] font-medium text-sm">Leer guía →</span>
               </Link>
-              <Link href="/guia/mantenimiento-computadores-barranquilla" className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="font-bold text-gray-900 mb-2 text-lg">Mantenimiento de computadores</h3>
-                <p className="text-gray-700 text-sm mb-4">Antes de que se muera de calor en Barranquilla</p>
-                <span className="text-[#0077B6] font-medium text-sm">Leer guía →</span>
-              </Link>
-              <Link href="/guia/mantenimiento-preventivo-computador-cartagena" className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="font-bold text-gray-900 mb-2 text-lg">Mantenimiento preventivo</h3>
-                <p className="text-gray-700 text-sm mb-4">Menos calor, menos sustos en Cartagena</p>
-                <span className="text-[#0077B6] font-medium text-sm">Leer guía →</span>
-              </Link>
-              <Link href="/guia/limpieza-portatil-barranquilla" className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="font-bold text-gray-900 mb-2 text-lg">Limpieza de portátil</h3>
-                <p className="text-gray-700 text-sm mb-4">El polvo gana si vos no en Barranquilla</p>
-                <span className="text-[#0077B6] font-medium text-sm">Leer guía →</span>
-              </Link>
             </div>
           </div>
         </section>
