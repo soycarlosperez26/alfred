@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { trackWhatsAppClick } from "../../analytics";
 
-export default function SoporteTecnicoDomicilio() {
+export default function MantenimientoPreventivoCartagena() {
   const whatsappLink = "https://wa.me/573044775117?text=Hola%20Alfred%2C%20necesito%20una%20mano%20con";
   const phoneNumber = "+57 304 477 5117";
 
@@ -33,7 +33,7 @@ export default function SoporteTecnicoDomicilio() {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => trackWhatsAppClick('guia-soporte-domicilio-header')}
+                onClick={() => trackWhatsAppClick('guia-mantenimiento-cartagena-header')}
                 className="bg-[#F77F00] text-white px-4 py-2 rounded-lg hover:bg-[#e67300] transition-colors font-medium"
               >
                 Escribime por WhatsApp
@@ -43,7 +43,7 @@ export default function SoporteTecnicoDomicilio() {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => trackWhatsAppClick('guia-soporte-domicilio-nav')}
+              onClick={() => trackWhatsAppClick('guia-mantenimiento-cartagena-nav')}
               className="md:hidden bg-[#F77F00] text-white px-4 py-2 rounded-lg hover:bg-[#e67300] transition-colors text-sm font-medium"
             >
               WhatsApp
@@ -58,10 +58,15 @@ export default function SoporteTecnicoDomicilio() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-[#F77F00] font-medium mb-4">Guía Alfred</p>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Soporte técnico a domicilio (o remoto) en Barranquilla y Cartagena
+              Mantenimiento preventivo en Cartagena: menos calor, menos sustos
             </h1>
+            <div className="bg-[#F77F00] bg-opacity-10 border-l-4 border-[#F77F00] p-4 mb-6 rounded">
+              <p className="text-lg text-gray-900 font-medium">
+                💡 Si el ventilador suena a avión en Bocagrande, no es "así es el portátil". Si suena a licuadora, es polvo.
+              </p>
+            </div>
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Si tu PC, Wi‑Fi o celular está fallando en Barranquilla o Cartagena, te puedo ayudar remoto, ir a tu casa, o verlo en taller. Vos elegís lo que te quede más cómodo.
+              Limpieza, temperaturas y optimización para que tu PC aguante el clima de Cartagena. El mantenimiento preventivo evita que un equipo que anda bien se convierta en un dolor de cabeza.
             </p>
           </div>
         </section>
@@ -69,98 +74,72 @@ export default function SoporteTecnicoDomicilio() {
         {/* Content Section */}
         <section className="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Cómo trabajo: remoto, visita o taller</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Qué es el mantenimiento preventivo</h2>
+            <p className="text-gray-700 mb-8">
+              Es revisar y limpiar el equipo <strong>antes</strong> de que falle. En Cartagena, donde el calor y la humedad aceleran el desgaste, el preventivo te ahorra disgustos.
+            </p>
             
             <div className="space-y-8 mb-12">
               <div className="bg-blue-50 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">🖥️ Remoto (desde donde estés)</h3>
-                <p className="text-gray-700 mb-3">
-                  Me conectás por internet y yo veo tu equipo en vivo, como si estuviera ahí. Sirve para:
-                </p>
-                <ul className="space-y-2 text-gray-700 ml-4">
-                  <li>• PC lento, virus, actualizaciones</li>
-                  <li>• Configurar programas, correo, cuentas</li>
-                  <li>• Revisar la red Wi‑Fi (configuración del router)</li>
-                  <li>• Formatear y reinstalar Windows</li>
-                  <li>• Ayuda con celulares (algunas cosas)</li>
-                </ul>
-                <p className="text-gray-700 mt-3">
-                  <strong>Ventaja:</strong> es más rápido y más barato porque no tengo que desplazarme.
-                </p>
-              </div>
-
-              <div className="bg-blue-50 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">🏠 Visita a domicilio (Barranquilla y Cartagena)</h3>
-                <p className="text-gray-700 mb-3">
-                  Voy a tu casa u oficina si hay que ver algo físico:
-                </p>
-                <ul className="space-y-2 text-gray-700 ml-4">
-                  <li>• Revisar o instalar redes y cables</li>
-                  <li>• Limpiar polvo por dentro del PC</li>
-                  <li>• Cambiar pasta térmica, disco, memoria</li>
-                  <li>• Instalar impresoras, router, repetidor</li>
-                  <li>• Configurar varios equipos en red (casa/negocio)</li>
-                </ul>
-                <p className="text-gray-700 mt-3">
-                  <strong>Cobertura:</strong> Barranquilla, Cartagena y alrededores cercanos.
-                </p>
-              </div>
-
-              <div className="bg-blue-50 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">🔧 Taller</h3>
-                <p className="text-gray-700 mb-3">
-                  Si el equipo necesita algo que lleva más tiempo o herramientas (como limpieza a fondo, cambio de piezas, o reparación complicada), me lo llevás o te lo paso a buscar, lo arreglo en taller, y te lo devuelvo funcionando.
-                </p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">🧹 Limpieza física interna</h3>
                 <p className="text-gray-700">
-                  <strong>Te aviso antes</strong> si veo que el arreglo no vale la pena.
+                  Abrir el PC o portátil, sacar el polvo del ventilador, disipador y ranuras. El polvo bloquea el aire y el equipo se recalienta. En Cartagena esto es crítico.
+                </p>
+              </div>
+
+              <div className="bg-blue-50 rounded-lg p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">🌡️ Control de temperatura</h3>
+                <p className="text-gray-700">
+                  Cambio de pasta térmica si hace falta, revisión de ventiladores. El objetivo es que el equipo no se cocine por dentro con el clima de Cartagena.
+                </p>
+              </div>
+
+              <div className="bg-blue-50 rounded-lg p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">💾 Optimización del sistema</h3>
+                <p className="text-gray-700">
+                  Limpieza de archivos basura, actualizaciones, chequeo de programas que se abren solos, antivirus. Que el equipo arranque rápido y no se trabe.
+                </p>
+              </div>
+
+              <div className="bg-blue-50 rounded-lg p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">🔍 Diagnóstico de componentes</h3>
+                <p className="text-gray-700">
+                  Reviso disco duro, memoria, conexiones. Si algo está por fallar, te aviso y vemos si lo cambiamos o seguimos así un poco más.
                 </p>
               </div>
             </div>
 
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Cómo es el proceso</h2>
-            
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-[#F77F00] rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
-                  1
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Me escribís por WhatsApp</h3>
-                <p className="text-gray-700 text-sm">Contame qué pasa. Te escucho 15 minutos gratis.</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-[#F77F00] rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
-                  2
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Te digo qué onda</h3>
-                <p className="text-gray-700 text-sm">Si es remoto, visita o taller. Y te cotizo claro.</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-[#F77F00] rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
-                  3
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Seguimos si te late</h3>
-                <p className="text-gray-700 text-sm">Coordinamos día/hora y lo arreglamos.</p>
-              </div>
-            </div>
-
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Cobertura Costa Caribe</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Cada cuánto hacerlo en Cartagena</h2>
             <p className="text-gray-700 mb-4">
-              Atiendo principalmente <strong>Barranquilla y Cartagena</strong>, incluyendo alrededores como Soledad, Malambo, Puerto Colombia, Turbaco, y zonas cercanas.
+              <strong>Recomendación general:</strong> cada 6–12 meses.
             </p>
-            <p className="text-gray-700 mb-8">
-              Si estás en otra ciudad de la Costa y el problema se puede ver remoto, también te ayudo. Escribime y vemos.
+            <ul className="space-y-2 text-gray-700 mb-8 ml-4">
+              <li>• Si el equipo está en casa sin aire o en oficina con polvo: cada 6 meses</li>
+              <li>• Si está en ambiente con aire acondicionado y limpio: cada 12 meses</li>
+              <li>• Si ya el ventilador hace ruido o el equipo se calienta mucho: hacelo ya</li>
+            </ul>
+
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">¿Cuándo saber que ya le toca?</h2>
+            <p className="text-gray-700 mb-4">
+              Señales de que tu PC necesita mantenimiento:
             </p>
+            <ul className="space-y-2 text-gray-700 mb-8 ml-4">
+              <li>• El ventilador suena fuerte (como avión o licuadora)</li>
+              <li>• El equipo está caliente al tacto</li>
+              <li>• Se apaga solo o se reinicia de la nada</li>
+              <li>• Arranca lento o se traba más que antes</li>
+            </ul>
 
             <div className="bg-gradient-to-r from-[#023E8A] to-[#0077B6] rounded-xl p-8 text-white my-12">
-              <h3 className="text-2xl font-bold mb-4">¿Necesitás soporte técnico en Barranquilla o Cartagena?</h3>
+              <h3 className="text-2xl font-bold mb-4">¿Tu PC necesita mantenimiento en Cartagena?</h3>
               <p className="mb-6 text-lg">
-                Escribime y te doy 15 minutos gratis de asesoría por WhatsApp. Te digo si lo vemos remoto, voy a tu casa, o lo miramos en taller. Sin compromiso.
+                Escribime y te doy 15 minutos gratis de asesoría por WhatsApp. Te digo si le toca mantenimiento, qué incluye, y te cotizo claro.
               </p>
               <a
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => trackWhatsAppClick('guia-soporte-domicilio')}
+                onClick={() => trackWhatsAppClick('guia-mantenimiento-cartagena')}
                 className="inline-flex items-center justify-center bg-[#F77F00] text-white px-8 py-4 rounded-lg hover:bg-[#e67300] transition-colors text-lg font-medium shadow-lg hover:shadow-xl"
               >
                 <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
@@ -175,13 +154,37 @@ export default function SoporteTecnicoDomicilio() {
             <div className="space-y-6">
               <details className="group border-b border-gray-200 pb-6">
                 <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-gray-900 list-none">
-                  ¿Siempre hay que ir a domicilio?
+                  ¿Cada cuánto le hago mantenimiento en Cartagena?
                   <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
                 <p className="mt-4 text-gray-700">
-                  No. Mucho se puede hacer remoto, es más rápido y más barato. Solo voy a domicilio si hace falta tocar algo físico (cables, limpiar por dentro, cambiar piezas). Lo decidimos después de hablar.
+                  Cada 6–12 meses. Si tu equipo está en ambiente con polvo o sin aire, mejor cada 6. Si está en aire acondicionado, aguanta 12 meses.
+                </p>
+              </details>
+
+              <details className="group border-b border-gray-200 pb-6">
+                <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-gray-900 list-none">
+                  ¿El mantenimiento alarga la vida del PC?
+                  <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <p className="mt-4 text-gray-700">
+                  Sí. Evitar sobrecalentamiento y mantener el sistema limpio puede sumarle años al equipo. En Cartagena, donde el calor es constante, el mantenimiento es clave.
+                </p>
+              </details>
+
+              <details className="group border-b border-gray-200 pb-6">
+                <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-gray-900 list-none">
+                  ¿Vas a domicilio en Cartagena?
+                  <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <p className="mt-4 text-gray-700">
+                  Sí, voy a domicilio en Cartagena y alrededores. También podés llevarme el equipo a taller si preferís. Lo que te quede más cómodo.
                 </p>
               </details>
 
@@ -193,43 +196,7 @@ export default function SoporteTecnicoDomicilio() {
                   </svg>
                 </summary>
                 <p className="mt-4 text-gray-700">
-                  Depende de qué necesitás (remoto, visita, taller, repuestos). Te cotizo después de escucharte 15 minutos gratis. No pongo precios a ciegas porque cada caso es distinto.
-                </p>
-              </details>
-
-              <details className="group border-b border-gray-200 pb-6">
-                <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-gray-900 list-none">
-                  ¿Atendés empresas o solo casas?
-                  <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </summary>
-                <p className="mt-4 text-gray-700">
-                  Los dos. Te atiendo igual si es tu PC en la casa o los equipos de tu negocito/oficina en Barranquilla o Cartagena.
-                </p>
-              </details>
-
-              <details className="group border-b border-gray-200 pb-6">
-                <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-gray-900 list-none">
-                  ¿Qué días atendés?
-                  <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </summary>
-                <p className="mt-4 text-gray-700">
-                  Lunes a sábado. Si necesitás algo urgente un domingo, escribime igual y vemos si te puedo ayudar.
-                </p>
-              </details>
-
-              <details className="group border-b border-gray-200 pb-6">
-                <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-gray-900 list-none">
-                  ¿Hacés contratos de mantenimiento?
-                  <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </summary>
-                <p className="mt-4 text-gray-700">
-                  Por ahora hago soporte puntual (cuando lo necesitás). Si tenés un negocio y querés algo periódico, hablamos y vemos si te armo algo.
+                  Depende de qué incluya (limpieza física, pasta térmica, optimización). Te cotizo después de escucharte 15 minutos gratis por WhatsApp.
                 </p>
               </details>
             </div>
@@ -243,11 +210,11 @@ export default function SoporteTecnicoDomicilio() {
                 <Link href="/guia/limpieza-portatil-barranquilla" className="block text-[#0077B6] hover:text-[#023E8A] font-medium">
                   → Limpieza de portátil en Barranquilla
                 </Link>
-                <Link href="/guia/pc-lento-barranquilla" className="block text-[#0077B6] hover:text-[#023E8A] font-medium">
-                  → PC lento en Barranquilla: qué hacer antes de formatear
-                </Link>
                 <Link href="/guia/wifi-lento-cartagena" className="block text-[#0077B6] hover:text-[#023E8A] font-medium">
                   → Wi‑Fi lento en Cartagena: 3 tips que sí ayudan
+                </Link>
+                <Link href="/guia/soporte-tecnico-a-domicilio-barranquilla-cartagena" className="block text-[#0077B6] hover:text-[#023E8A] font-medium">
+                  → Soporte técnico a domicilio en Barranquilla y Cartagena
                 </Link>
                 <Link href="/" className="block text-[#0077B6] hover:text-[#023E8A] font-medium">
                   → Volver al inicio
@@ -263,7 +230,7 @@ export default function SoporteTecnicoDomicilio() {
         href={whatsappLink}
         target="_blank"
         rel="noopener noreferrer"
-        onClick={() => trackWhatsAppClick('guia-soporte-domicilio-sticky')}
+        onClick={() => trackWhatsAppClick('guia-mantenimiento-cartagena-sticky')}
         className="fixed bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition-all z-50"
         aria-label="Contactar por WhatsApp"
       >
@@ -294,7 +261,7 @@ export default function SoporteTecnicoDomicilio() {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => trackWhatsAppClick('guia-soporte-domicilio-footer')}
+                onClick={() => trackWhatsAppClick('guia-mantenimiento-cartagena-footer')}
                 className="text-[#F77F00] hover:text-[#e67300] text-sm"
               >
                 Escribime →
