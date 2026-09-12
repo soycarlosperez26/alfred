@@ -207,6 +207,33 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Guides Section */}
+        <section className="py-16 md:py-24 bg-blue-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Guías</h2>
+            <p className="text-xl text-gray-700 mb-8">
+              Tips que te pueden servir antes de llamar a un técnico
+            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              <Link href="/guia/pc-lento-barranquilla" className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="font-bold text-gray-900 mb-2 text-lg">PC lento en Barranquilla</h3>
+                <p className="text-gray-700 text-sm mb-4">Qué hacer antes de formatear o cambiar nada</p>
+                <span className="text-[#0077B6] font-medium text-sm">Leer guía →</span>
+              </Link>
+              <Link href="/guia/wifi-lento-cartagena" className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="font-bold text-gray-900 mb-2 text-lg">Wi‑Fi lento en Cartagena</h3>
+                <p className="text-gray-700 text-sm mb-4">3 tips que sí ayudan con internet que patea</p>
+                <span className="text-[#0077B6] font-medium text-sm">Leer guía →</span>
+              </Link>
+              <Link href="/guia/soporte-tecnico-a-domicilio-barranquilla-cartagena" className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="font-bold text-gray-900 mb-2 text-lg">Soporte a domicilio o remoto</h3>
+                <p className="text-gray-700 text-sm mb-4">Cómo trabajo en Barranquilla y Cartagena</p>
+                <span className="text-[#0077B6] font-medium text-sm">Leer guía →</span>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Why Me Section */}
         <section className="py-16 md:py-24 bg-blue-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
