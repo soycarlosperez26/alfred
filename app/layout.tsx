@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { site } from "./lib/site";
+import { JsonLd, localBusinessSchema, personSchema } from "./lib/schema";
 import "./globals.css";
 
 const inter = Inter({
@@ -9,9 +11,25 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Soporte técnico Barranquilla y Cartagena | Alfred",
-  description: "Técnico de PC, redes, celulares y software en Barranquilla y Cartagena. Asesoría gratis 15 min por WhatsApp. Sin enredos.",
-  keywords: "soporte técnico Barranquilla, técnico computadores Cartagena, reparación PC, redes wifi, soporte celulares, técnico informático costa",
+  /**
+   * metadataBase resuelve las rutas relativas (OpenGraph, canonical) a URLs
+   * absolutas. Sin esto, WhatsApp y Facebook no muestran vista previa al
+   * compartir el link — y WhatsApp es el canal principal del negocio.
+   */
+  metadataBase: new URL(site.url),
+  title: {
+    default: `${site.name} | Soporte técnico y asesoría en la Costa Atlántica`,
+    /** Las páginas internas heredan la marca sin tener que repetirla */
+    template: `%s | ${site.name}`,
+  },
+  description: site.description,
+  applicationName: site.name,
+  authors: [{ name: site.founder }],
+  creator: site.founder,
+  publisher: site.name,
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
@@ -24,15 +42,31 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "Soporte técnico Barranquilla y Cartagena | Alfred",
-    description: "Técnico de PC, redes, celulares y software en Barranquilla y Cartagena. Asesoría gratis 15 min por WhatsApp. Sin enredos.",
+    title: `${site.name} | Tu amigo el ingeniero en la Costa Atlántica`,
+    description: site.description,
     type: "website",
-    locale: "es_CO",
-    siteName: "Alfred - Soporte Técnico",
+    locale: site.locale,
+    siteName: site.name,
+    url: site.url,
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${site.name} | Tu amigo el ingeniero en la Costa Atlántica`,
+    description: site.description,
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-snippet': -1,
+      'max-image-preview': 'large',
+      'max-video-preview': -1,
+    },
+  },
+  formatDetection: {
+    telephone: true,
   },
 };
 
@@ -41,68 +75,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "¿Cuánto cuesta?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Depende de qué necesitás. Te cotizo después de escucharte 15 minutos gratis por WhatsApp. Nada de sorpresas."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Puedo llamarte por teléfono?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Mejor escribime por WhatsApp así quedamos claros desde el principio y tenés el registro de todo. Es más cómodo para los dos."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Atendés solo Barranquilla y Cartagena?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Principalmente BQ y CTG, pero si estás cerca o es remoto, hablemos. Si puedo ayudarte, te digo; si no, también."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Qué tipo de equipos arreglás?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "PC, portátiles, celulares (software principalmente), redes, Wi-Fi, programas, cuentas. Si es otro aparato, preguntame."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Vas a mi casa o tengo que ir donde vos?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Como te venga mejor: remoto, te visito, o lo miramos en taller. Lo decidimos después de hablar."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿De verdad son 15 minutos gratis?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí, de verdad. Te escucho, entiendo qué pasa y te doy una idea del camino. Si seguimos, te cotizo claro y arrancamos."
-        }
-      }
-    ]
-  };
-
   return (
-    <html lang="es" className={inter.variable}>
+    <html lang="es-CO" className={inter.variable}>
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
+        {/*
+          Identidad del negocio y de Alfred: aplica a todo el sitio.
+          El FAQPage NO va aquí — es propio de cada página, y duplicarlo en
+          todas las rutas genera datos estructurados en conflicto.
+        */}
+        <JsonLd data={localBusinessSchema()} />
+        <JsonLd data={personSchema()} />
       </head>
       <body className="min-h-screen flex flex-col font-sans antialiased">
         {children}
