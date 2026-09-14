@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: `${site.name} | Tu amigo el ingeniero en la Costa Atlántica`,
+    title: `${site.name} | ${site.tagline}`,
     description: site.description,
     type: "website",
     locale: site.locale,
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${site.name} | Tu amigo el ingeniero en la Costa Atlántica`,
+    title: `${site.name} | ${site.tagline}`,
     description: site.description,
   },
   robots: {

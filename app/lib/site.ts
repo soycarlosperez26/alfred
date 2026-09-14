@@ -11,7 +11,7 @@
 export const site = {
   name: 'Alfred Soluciona',
   legalName: 'Alfred Soluciona',
-  tagline: 'Tu amigo el ingeniero en la Costa Atlántica',
+  tagline: 'Soporte técnico y consultoría tecnológica en la Costa Atlántica',
   description:
     'Asesoría tecnológica honesta con 15 años de experiencia. La primera consulta por WhatsApp es gratis. Computadores, redes Wi-Fi, celulares y soporte para empresas en la Costa Atlántica.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.alfredtech.online',

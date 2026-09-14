@@ -51,9 +51,7 @@ export default function Home() {
         <section className="bg-gradient-to-b from-blue-50 to-white py-16 md:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
-              <p className="text-[#F77F00] font-medium mb-4">
-                Tu amigo el ingeniero en la Costa Atlántica
-              </p>
+              <p className="text-[#F77F00] font-medium mb-4">{site.tagline}</p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 ¿Problemas con tu tecnología? Tranquilo, Alfred Soluciona.
               </h1>
