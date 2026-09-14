@@ -60,6 +60,30 @@ export const guias: Guia[] = [
     publicada: '2026-09-14',
   },
   {
+    slug: 'recuperar-cuenta-google',
+    titulo: 'Cómo recuperar tu cuenta de Google o Gmail paso a paso',
+    resumen:
+      'Perdiste el acceso a tu correo. Qué hacer, en qué orden, y por qué el equipo desde el que lo intentas cambia tus posibilidades.',
+    keyword: 'recuperar cuenta de google',
+    publicada: '2026-09-14',
+  },
+  {
+    slug: 'estafas-whatsapp-colombia',
+    titulo: 'Estafas por WhatsApp: cómo reconocerlas y qué hacer si caíste',
+    resumen:
+      'Las cinco estafas que más circulan en Colombia, la única configuración que de verdad te protege, y cómo recuperar tu cuenta si te la robaron.',
+    keyword: 'estafas por whatsapp colombia',
+    publicada: '2026-09-14',
+  },
+  {
+    slug: 'liberar-espacio-celular',
+    titulo: 'El celular dice que no tiene espacio: cómo liberarlo sin borrar tus fotos',
+    resumen:
+      'Qué ocupa el espacio de verdad, en qué orden borrar, y por qué borrar fotos casi nunca es la solución.',
+    keyword: 'liberar espacio celular',
+    publicada: '2026-09-14',
+  },
+  {
     slug: 'respaldo-datos-empresa',
     titulo: 'Si se daña el disco duro, ¿pierdes tu empresa? Cómo respaldar bien',
     resumen:
