@@ -60,6 +60,14 @@ export const guias: Guia[] = [
     publicada: '2026-09-14',
   },
   {
+    slug: 'recuperar-cuenta-google',
+    titulo: 'Cómo recuperar tu cuenta de Google o Gmail paso a paso',
+    resumen:
+      'Perdiste el acceso a tu correo. Qué hacer, en qué orden, y por qué el equipo desde el que lo intentas cambia tus posibilidades.',
+    keyword: 'recuperar cuenta de google',
+    publicada: '2026-09-14',
+  },
+  {
     slug: 'respaldo-datos-empresa',
     titulo: 'Si se daña el disco duro, ¿pierdes tu empresa? Cómo respaldar bien',
     resumen:
