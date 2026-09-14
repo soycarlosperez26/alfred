@@ -3,8 +3,11 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Política de privacidad | Alfred",
-  description: "Política de privacidad de Alfred - Soporte técnico Barranquilla y Cartagena",
+  // El layout raíz añade "| Alfred Soluciona" con su template, así que no se repite aquí
+  title: "Política de privacidad",
+  description:
+    "Cómo trato los datos que me compartes cuando me escribes o navegas el sitio de Alfred Soluciona.",
+  alternates: { canonical: "/privacidad" },
   robots: {
     index: true,
     follow: true,
@@ -42,8 +45,8 @@ export default function PrivacidadPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Información que recopilamos</h2>
               <p className="text-gray-700 mb-4">
-                Cuando te ponés en contacto conmigo por WhatsApp, recopilo la información que vos me das: 
-                tu nombre, número de teléfono y detalles del problema técnico que tenés.
+                Cuando te pones en contacto conmigo por WhatsApp, recopilo la información que tú me
+                das: tu nombre, número de teléfono y los detalles del problema técnico que tienes.
               </p>
             </section>
 
@@ -53,7 +56,7 @@ export default function PrivacidadPage() {
                 Uso tu información solo para:
               </p>
               <ul className="list-disc pl-6 text-gray-700 mb-4">
-                <li>Darte el soporte técnico que necesitás</li>
+                <li>Darte el soporte técnico que necesitas</li>
                 <li>Coordinar visitas o asistencia remota</li>
                 <li>Enviarte cotizaciones y seguimiento del servicio</li>
                 <li>Mejorar mi servicio</li>
@@ -70,14 +73,14 @@ export default function PrivacidadPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Tus derechos</h2>
               <p className="text-gray-700 mb-4">
-                Podés pedirme en cualquier momento que borre tu información. Escribime por WhatsApp y listo.
+                Puedes pedirme en cualquier momento que borre tu información. Escríbeme por WhatsApp y listo.
               </p>
             </section>
 
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Contacto</h2>
               <p className="text-gray-700 mb-4">
-                Si tenés alguna pregunta sobre esta política, escribime por WhatsApp al +57 304 477 5117.
+                Si tienes alguna pregunta sobre esta política, escríbeme por WhatsApp al +57 304 477 5117.
               </p>
             </section>
           </div>

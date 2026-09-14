@@ -1,13 +1,13 @@
 import { MetadataRoute } from 'next'
- 
+import { site } from './lib/site'
+
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.alfredtech.online'
-  
   return {
     rules: {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: `${site.url}/sitemap.xml`,
+    host: site.url,
   }
 }
